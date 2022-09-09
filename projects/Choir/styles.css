@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  background-color: #283449;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #DBEDF3;
+  font-family: sans-serif;
+  font-weight: 100;
+  margin-top: 0px;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.w,
+.a,
+.s,
+.d,
+.j,
+.k,
+.l
+  {
+  background-image: url("images/rafal.png");
+}
+
+.set {
+  margin: 9% auto;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.note {
+  outline: none;
+  border: 10px solid #0d3fc800;
+  font-size: 5rem;
+  font-family: 'Poppins', sans-serif;
+  line-height: 2;
+  font-weight: 900;
+  color: #696e06ae;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-repeat: no-repeat;
+  background-size: 75% 100%;
+  background-position: center; 
+  
+}
+
+button {
+  background-color: #e7e7e700;
+}

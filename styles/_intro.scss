@@ -1,0 +1,162 @@
+.main-head{
+  width: 95%;
+  margin: 0 0 0 auto;
+}
+
+nav {
+  @include flex(space-between, center, row);
+  min-height: 10vh;
+  width: 60%;
+  flex-wrap: wrap;
+  .logo{
+    @include flex(flex-start, center, row);
+    flex: 1 1 10rem;
+    h1 {
+      margin: 2rem;
+    }
+  }
+
+  ul{
+    @include flex(space-around, center, row);
+    flex: 1 1 40rem;
+  }
+}
+
+.intro{
+  min-height: 90vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  @include flex(space-between, lef, row);
+  h2{
+    font-size: 6rem;
+    padding-top: 6rem;
+    color: #154353;
+    display: inline-block;
+  }
+  h3{
+    font-size: 4rem;
+    padding: 3rem 0rem;
+    color: #A5A4AD;
+  }
+  
+  // p{
+  //   padding-top: 2rem;
+  //   color: $gray-text;
+  // }
+}
+
+.splash{
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  z-index: -1;
+}
+.intro-social{
+  margin-top: 4rem;
+  a {
+    margin-right: 5rem;
+  }
+}
+.active {
+    background: $gray-text;
+    color: white;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+  }
+
+.intro-text, .intro-images {
+  flex: 1 1 10rem;
+  text-align: right;
+}
+
+#plant{
+  animation: plant 3s ease infinite alternate;
+}
+
+#hand-right {
+  animation: hand-right 1.5s linear infinite alternate;
+  transform-origin: right;
+  transform-box: fill-box;
+}
+
+
+#leg-left {
+  animation: leg 0.5s infinite linear alternate;
+  transform-box: fill-box;
+  transform-origin: right;
+}
+
+#leg-right {
+  animation: leg 2s infinite linear alternate;
+  transform-box: fill-box;
+  transform-origin: left;
+}
+
+#aud1, #aud2, #aud3, #aud4, #aud5 {
+  animation: audience 1.5s ease infinite alternate;
+  transform-box: fill-box;
+  transform-origin: bottom;
+
+}
+
+#aud6, #aud7, #aud8, #aud9, #aud10, #aud11, #aud12 {
+  animation: audience 0.5s ease infinite alternate;
+  transform-box: fill-box;
+  transform-origin: bottom;
+}
+
+#light1 {
+  animation: light 3s ease infinite alternate;
+  transform-box: fill-box;
+  transform-origin: left top;
+}
+
+@keyframes body{
+  from {
+    transform: rotate(-5deg);
+  } to {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes light{
+  from {
+    transform: rotate(-10deg);
+  } to {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes plant{
+  from {
+    transform: translateY(0%);
+  } to {
+    transform: translateY(-5%);
+  }
+}
+
+@keyframes hand-right{
+  from{
+    transform: rotate(-15deg);
+  } to {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes leg{
+  from{
+    transform: rotate(-18deg);
+  } to {
+    transform: rotate(18deg);
+  }
+}
+
+@keyframes audience{
+  from{
+    transform: rotate(-13deg);
+  } to {
+    transform: rotateX(13deg);
+  }
+}
